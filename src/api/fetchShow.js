@@ -7,3 +7,11 @@ export const fetchShow = () => {
         .then(res => res)
         
   }
+
+
+export const otherShow = () => {
+  return axios.get(
+    "https://api.tvmaze.com/singlesearch/shows?q=the-letter-for-the-king&embed=episodes"
+  )
+  .then(res => res);
+}
